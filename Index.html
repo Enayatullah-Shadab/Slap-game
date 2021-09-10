@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+		integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<link rel="stylesheet" href="game.css">
+	<link rel="stylesheet" href="cosmo.css">
+	<link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+	<title>Slap Game</title>
+</head>
+<body class="bg-wheat">
+	<header class="container-fluid bg-dark text-center p-4 text-light">
+		<h1>🤜Fight Rocky🤛</h1>
+	</header>
+	<main class="container">
+		<div class="row my-4 justify-content-between">
+			<div class="col-5 bg-dark p-0 text-center text-light rounded">
+				<img class="w-100 rounded-top" src="rocky.jpeg" alt="">
+				<h4>Name: Rocky</h4>
+				<h4>Health: <span id="health">--</span></h4>
+				<h4>Hits: <span id="hits">--</span></h4>
+			</div>
+			<div class="col-5 bg-dark text-center text-light rounded">
+				<div class="d-flex flex-column">
+					<h2>ATTACK!</h2>
+					<button class="btn btn-danger rounded btn-large my-3" id="slap-button" onClick="pain('slap')">🤚 Slap</button>
+
+					<button class="btn btn-danger rounded btn-large my-3" id="punch-button" onClick="pain('punch')">👊
+						Punch</button>
+
+					<button class="btn btn-danger rounded btn-large my-3" id="kick-button" onClick="pain('kick')">🦶 Kick</button>
+				</div>
+				<div class="d-flex flex-column">
+					<h2>DEFEND!</h2>
+					<button class="btn btn-primary rounded btn-large my-3" id="flex-button" onClick="defend('flex')">💪
+						Flex</button>
+
+					<button class="btn btn-primary rounded btn-large my-3" id="block-button" onClick="defend('block')">🛡
+						Block</button>
+
+					<button class="btn btn-primary rounded btn-large my-3" id="dodge-button" onClick="defend('dodge')">🏃‍♂️
+						Dodge</button>
+				</div>
+				<div class="d-flex flex-column">
+					<button class="btn btn-success rounded btn-large my-3" id="reset-button" onClick="reset()">♻ Reset</button>
+				</div>
+			</div>
+	</main>
+	<footer class="container-fluid text-center bg-dark text-light p-4 m-0">
+		<h2>Made with 💖 by Sha & Holli</h2>
+	</footer>
+
+	<script src="game.js"></script>
+</body>
+</html>
